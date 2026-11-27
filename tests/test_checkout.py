@@ -42,6 +42,7 @@ def test_cupom_invalido_levanta_value_error():
         calcular_valor_final(100.0, "CUPOM_QUE_NAO_EXISTE", False)
 
 
+
 # Teste Parametrizado (Análise de Valor Limite e Combinações)
 @pytest.mark.parametrize("valor, cupom, vip, esperado", [
     (199.99, None, False, 219.99),      # Logo abaixo do limite -> cobra R$ 20
