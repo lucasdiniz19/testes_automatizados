@@ -32,7 +32,7 @@ def calcular_valor_final(valor_compra: float, cupom: Optional[str] = None, e_vip
 
     valor_com_desconto = valor_compra * (1 - desconto)
 
-    # Regra de Frete
+    
     if e_vip or valor_com_desconto >= 200.0:
         frete = 0.0
     else:
